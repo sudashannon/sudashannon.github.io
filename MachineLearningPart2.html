@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="stm32," />
 
 
 
@@ -94,15 +94,25 @@
 
 
 
-<meta name="description" content="随便写写，技术的，生活的。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陆荏葭的半永久基地">
-<meta property="og:url" content="lurenjia.tech/index.html">
+<meta name="description" content="框架程序搭建完成。
+
+程序总览嵌入式程序1234567891011121314151617181920212223+---CMSIS    #包含启动文件与system_stm32f4xx.c以及相关的头文件|+---StdLib   #32标准库|+---SL_Lib   #本人学习一来整理的一系列代码|   +---SL_BSP  #依赖硬件平台的代码，主要包括各种外设||   +---SL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MachineLearningPart2">
+<meta property="og:url" content="lurenjia.tech/MachineLearningPart2.html">
 <meta property="og:site_name" content="陆荏葭的半永久基地">
-<meta property="og:description" content="随便写写，技术的，生活的。">
+<meta property="og:description" content="框架程序搭建完成。
+
+程序总览嵌入式程序1234567891011121314151617181920212223+---CMSIS    #包含启动文件与system_stm32f4xx.c以及相关的头文件|+---StdLib   #32标准库|+---SL_Lib   #本人学习一来整理的一系列代码|   +---SL_BSP  #依赖硬件平台的代码，主要包括各种外设||   +---SL">
+<meta property="og:image" content="http://oyscch6wz.bkt.clouddn.com/part2-1.jpg">
+<meta property="og:image" content="http://oyscch6wz.bkt.clouddn.com/part2-2.jpg">
+<meta property="og:updated_time" content="2017-10-31T02:53:41.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陆荏葭的半永久基地">
-<meta name="twitter:description" content="随便写写，技术的，生活的。">
+<meta name="twitter:title" content="MachineLearningPart2">
+<meta name="twitter:description" content="框架程序搭建完成。
+
+程序总览嵌入式程序1234567891011121314151617181920212223+---CMSIS    #包含启动文件与system_stm32f4xx.c以及相关的头文件|+---StdLib   #32标准库|+---SL_Lib   #本人学习一来整理的一系列代码|   +---SL_BSP  #依赖硬件平台的代码，主要包括各种外设||   +---SL">
+<meta name="twitter:image" content="http://oyscch6wz.bkt.clouddn.com/part2-1.jpg">
 
 
 
@@ -132,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="lurenjia.tech/"/>
+  <link rel="canonical" href="lurenjia.tech/MachineLearningPart2.html"/>
 
 
 
 
 
-  <title>陆荏葭的半永久基地</title>
+  <title>MachineLearningPart2 | 陆荏葭的半永久基地</title>
   
 
 
@@ -157,9 +167,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,9 +230,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -254,9 +262,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/MachineLearningPart2.html" itemprop="url">MachineLearningPart2</a></h1>
+          <h1 class="post-title" itemprop="name headline">MachineLearningPart2</h1>
         
 
         <div class="post-meta">
@@ -311,7 +317,7 @@
               </span>
               
                 <a href="/MachineLearningPart2.html#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::lurenjia.tech/MachineLearningPart2.html" class="cy_cmt_count" data-xid="MachineLearningPart2.html" itemprop="commentsCount" ></span>
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="MachineLearningPart2.html" itemprop="commentsCount"></span>
                 </a>
               
             
@@ -339,9 +345,7 @@
       
 
       
-        
-          
-            <blockquote>
+        <blockquote>
 <p>框架程序搭建完成。</p>
 </blockquote>
 <h1 id="程序总览"><a href="#程序总览" class="headerlink" title="程序总览"></a>程序总览</h1><h2 id="嵌入式程序"><a href="#嵌入式程序" class="headerlink" title="嵌入式程序"></a>嵌入式程序</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">+---CMSIS    #包含启动文件与system_stm32f4xx.c以及相关的头文件</div><div class="line">|</div><div class="line">+---StdLib   #32标准库</div><div class="line">|</div><div class="line">+---SL_Lib   #本人学习一来整理的一系列代码</div><div class="line">|   +---SL_BSP  #依赖硬件平台的代码，主要包括各种外设</div><div class="line">|</div><div class="line">|   +---SL_APP  #不依赖硬件平台，纯C实现的各种功能、</div><div class="line">|       +---APP_Debug  #串口调试交互</div><div class="line">|       +---APP_Key    #缓冲按键</div><div class="line">|       +---APP_Mem    #内存管理实现</div><div class="line">|       +---APP_RingBuffer  #环形队列</div><div class="line">|       +---APP_SoftTimer  #时间触发事件模式</div><div class="line">|       +---APP_String  #简单字符串处理</div><div class="line">|   +---SL_ThirdParty  #第三方有用的有趣代码</div><div class="line">|       +---bget  #简单内存管理</div><div class="line">|       +---ugui  #简单图形界面</div><div class="line">|</div><div class="line">+---SL_MV   #本次毕设的主要内容</div><div class="line">|   +---MVMain  #最靠近底层 jpeg数据与rgb数据的传输等</div><div class="line">|      </div><div class="line">|</div><div class="line">…………</div></pre></td></tr></table></figure>
@@ -354,8 +358,6 @@
 
 
 
-          
-        
       
     </div>
     
@@ -370,171 +372,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="lurenjia.tech/MachineLearningPart1.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Shannon">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://n1.itc.cn/img8/wb/recom/2016/08/30/147255048508336141.JPEG">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="陆荏葭的半永久基地">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/MachineLearningPart1.html" itemprop="url">Machine Learning No.1</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-27T10:57:26+08:00">
-                2017-10-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/机器学习/" itemprop="url" rel="index">
-                    <span itemprop="name">机器学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/stm32/" rel="tag"># stm32</a>
           
-
-          
-            
-              <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/MachineLearningPart1.html#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::lurenjia.tech/MachineLearningPart1.html" class="cy_cmt_count" data-xid="MachineLearningPart1.html" itemprop="commentsCount" ></span>
-                </a>
-              
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          emmm，毕设系列大坑。
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/MachineLearningPart1.html">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/MachineLearningPart1.html" rel="next" title="Machine Learning No.1">
+                <i class="fa fa-chevron-left"></i> Machine Learning No.1
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -544,10 +411,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -555,6 +423,12 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="SOHUCS"></div>
+    
+  </div>
+
 
         </div>
         
@@ -575,8 +449,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://n1.itc.cn/img8/wb/recom/2016/08/30/147255048508336141.JPEG"
@@ -638,6 +521,22 @@
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#程序总览"><span class="nav-number">1.</span> <span class="nav-text">程序总览</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#嵌入式程序"><span class="nav-number">1.1.</span> <span class="nav-text">嵌入式程序</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#上位机程序"><span class="nav-number">1.2.</span> <span class="nav-text">上位机程序</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#框架功能"><span class="nav-number">2.</span> <span class="nav-text">框架功能</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -761,10 +660,10 @@
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -799,7 +698,18 @@
 
 
   
-    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cythEkXW2"></script>
+    <script type="text/javascript">
+    (function(){
+      var appid = 'cythEkXW2';
+      var conf = 'ab084b234ba815005dbd30b4727dccd3';
+      var width = window.innerWidth || document.documentElement.clientWidth;
+      if (width < 960) {
+      window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){
+        window.changyan.api.config({appid:appid,conf:conf})});
+      }
+    })();
+    </script>
+    <script type="text/javascript" src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
   
 
 
